@@ -1,0 +1,50 @@
+DAY 1:
+Qn 1 :
+Difference between http1 and http2?
+		http1															http2
+It is slower and less reliable										It is much faster and highly reliable 
+Single TCP(Transmission Control Protocol) connection is use to send and receive one request/response	Using Multiplexing almost every request/ response is carried away by only one TCP
+Authentication is unsafe since the username and passwords are being transmitted in clear text 		Using TLS feature it is better equipped with the authentication of the network
+Provides slower delivery of webpages as compared to the http2						Using multiplexing the results are faster along with less sensitive to network delays.
+	
+	
+
+Qn 2:
+Blog about object and its internal representation in javascript?
+Object:
+•	Object is a important datatype in JavaScript. It is a nonprimitive datatype where the values(many) are stored in a continuous manner.
+•	The values containing inn the object is stored in the memory location using a reference number.
+•	The object values are stored in name: value pairs.
+•	Eg: var student={name: “Sriram”; age:22; place: “Chennai”};
+Representation of objects:
+
+Object literal:
+•	Its an easy way of representing the name: value pair inside a curly braces{}
+•	Eg1 : var hotel= {hotelName:”Udupi”; foodType:”veg&non-veg”; location:”Chennai”}
+•	Eg2 :
+•	var hotel= {};
+hotel.hotelName=”Udupi”;
+hotel.foodType=”veg&non-veg”;
+location= ”Chennai”;
+
+above example is simple creating the empty object and finally adding the other properties to it.
+Object keyword new:
+•	It is nothing but creating an new object() and then adding all the other properties to it
+•	Eg: 
+Var hotel = new.object();
+hotel.hotelName=”Udupi”;
+hotel.foodType=”veg&non-veg”;
+ location= ”Chennai”;
+
+object constructor type
+•	Constructor is a function and it is used to create multiple objects using main object.
+•	Eg:
+•	
+function Vehicle(name, maker) {
+this.name = name;
+this.maker = maker;
+}
+let car1 = new Vehicle(’Fiesta’, 'Ford’);
+let car2 = new Vehicle(’Santa Fe’, 'Hyundai’)
+console.log(car1.name); 
+console.log(car2.name);
